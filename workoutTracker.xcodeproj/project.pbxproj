@@ -21,6 +21,7 @@
 		9EDC195729AC80AA00BFE2CD /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC195629AC80AA00BFE2CD /* SettingsController.swift */; };
 		9EDC195929AC80E000BFE2CD /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC195829AC80E000BFE2CD /* ProgressController.swift */; };
 		9EDC195F29AC81C600BFE2CD /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC195E29AC81C600BFE2CD /* SessionController.swift */; };
+		9EDC196229AC94E600BFE2CD /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC196129AC94E600BFE2CD /* SecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		9EDC195629AC80AA00BFE2CD /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		9EDC195829AC80E000BFE2CD /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		9EDC195E29AC81C600BFE2CD /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
+		9EDC196129AC94E600BFE2CD /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		9EDC195029AC804D00BFE2CD /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				9EDC196029AC94D100BFE2CD /* Views */,
 				9EDC192929ABB98100BFE2CD /* OverviewController.swift */,
 			);
 			path = Overview;
@@ -173,6 +176,14 @@
 				9EDC195829AC80E000BFE2CD /* ProgressController.swift */,
 			);
 			path = Progress;
+			sourceTree = "<group>";
+		};
+		9EDC196029AC94D100BFE2CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC196129AC94E600BFE2CD /* SecondaryButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +262,7 @@
 				9EDC194E29AC7EC900BFE2CD /* UIView + extension.swift in Sources */,
 				9EDC195929AC80E000BFE2CD /* ProgressController.swift in Sources */,
 				9EDC194229ABBD4300BFE2CD /* TabBarController.swift in Sources */,
+				9EDC196229AC94E600BFE2CD /* SecondaryButton.swift in Sources */,
 				9EDC194A29AC6D1300BFE2CD /* NavBarController.swift in Sources */,
 				9EDC194829ABBE9B00BFE2CD /* Resources.swift in Sources */,
 				9EDC192629ABB98100BFE2CD /* AppDelegate.swift in Sources */,

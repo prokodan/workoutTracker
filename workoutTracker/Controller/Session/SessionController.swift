@@ -11,11 +11,11 @@ class SessionController: BaseController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "High Intensity Cardio"
+        title = R.Strings.NavBar.Titles.session
         navigationController?.tabBarItem.title = R.Strings.TabBar.TabsLabels.session
         
-        addNavBarButton(at: .left, with: "Pause")
-        addNavBarButton(at: .right, with: "Finish")
+        addNavBarButton(at: .left, with: R.Strings.Controllers.Session.navBarLeftButton)
+        addNavBarButton(at: .right, with: R.Strings.Controllers.Session.navBarRightButton)
     }
     
     override func navBarLeftButtonAction() {

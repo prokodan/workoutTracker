@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		9EDC192629ABB98100BFE2CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192529ABB98100BFE2CD /* AppDelegate.swift */; };
 		9EDC192829ABB98100BFE2CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192729ABB98100BFE2CD /* SceneDelegate.swift */; };
-		9EDC192A29ABB98100BFE2CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192929ABB98100BFE2CD /* ViewController.swift */; };
+		9EDC192A29ABB98100BFE2CD /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192929ABB98100BFE2CD /* OverviewController.swift */; };
 		9EDC193229ABB98200BFE2CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC193129ABB98200BFE2CD /* Assets.xcassets */; };
 		9EDC193529ABB98200BFE2CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC193329ABB98200BFE2CD /* LaunchScreen.storyboard */; };
 		9EDC194229ABBD4300BFE2CD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194129ABBD4300BFE2CD /* TabBarController.swift */; };
 		9EDC194629ABBE6100BFE2CD /* UI color + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194529ABBE6100BFE2CD /* UI color + extension.swift */; };
 		9EDC194829ABBE9B00BFE2CD /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194729ABBE9B00BFE2CD /* Resources.swift */; };
+		9EDC194A29AC6D1300BFE2CD /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194929AC6D1300BFE2CD /* NavBarController.swift */; };
+		9EDC194C29AC7C7C00BFE2CD /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194B29AC7C7C00BFE2CD /* BaseController.swift */; };
+		9EDC194E29AC7EC900BFE2CD /* UIView + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194D29AC7EC900BFE2CD /* UIView + extension.swift */; };
+		9EDC195729AC80AA00BFE2CD /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC195629AC80AA00BFE2CD /* SettingsController.swift */; };
+		9EDC195929AC80E000BFE2CD /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC195829AC80E000BFE2CD /* ProgressController.swift */; };
+		9EDC195F29AC81C600BFE2CD /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC195E29AC81C600BFE2CD /* SessionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9EDC192229ABB98100BFE2CD /* workoutTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workoutTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDC192529ABB98100BFE2CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EDC192729ABB98100BFE2CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9EDC192929ABB98100BFE2CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9EDC192929ABB98100BFE2CD /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
 		9EDC193129ABB98200BFE2CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EDC193429ABB98200BFE2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EDC193629ABB98200BFE2CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,6 +36,12 @@
 		9EDC194129ABBD4300BFE2CD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9EDC194529ABBE6100BFE2CD /* UI color + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI color + extension.swift"; sourceTree = "<group>"; };
 		9EDC194729ABBE9B00BFE2CD /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		9EDC194929AC6D1300BFE2CD /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		9EDC194B29AC7C7C00BFE2CD /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		9EDC194D29AC7EC900BFE2CD /* UIView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + extension.swift"; sourceTree = "<group>"; };
+		9EDC195629AC80AA00BFE2CD /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		9EDC195829AC80E000BFE2CD /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
+		9EDC195E29AC81C600BFE2CD /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +106,11 @@
 		9EDC194029ABBBBC00BFE2CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9EDC192929ABB98100BFE2CD /* ViewController.swift */,
-				9EDC194129ABBD4300BFE2CD /* TabBarController.swift */,
+				9EDC194F29AC803700BFE2CD /* Base */,
+				9EDC195029AC804D00BFE2CD /* Overview */,
+				9EDC195A29AC80FC00BFE2CD /* Session */,
+				9EDC195D29AC810700BFE2CD /* Progress */,
+				9EDC195C29AC810000BFE2CD /* Settings */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -113,8 +128,51 @@
 			isa = PBXGroup;
 			children = (
 				9EDC194529ABBE6100BFE2CD /* UI color + extension.swift */,
+				9EDC194D29AC7EC900BFE2CD /* UIView + extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9EDC194F29AC803700BFE2CD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC194129ABBD4300BFE2CD /* TabBarController.swift */,
+				9EDC194929AC6D1300BFE2CD /* NavBarController.swift */,
+				9EDC194B29AC7C7C00BFE2CD /* BaseController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9EDC195029AC804D00BFE2CD /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC192929ABB98100BFE2CD /* OverviewController.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		9EDC195A29AC80FC00BFE2CD /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC195E29AC81C600BFE2CD /* SessionController.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		9EDC195C29AC810000BFE2CD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC195629AC80AA00BFE2CD /* SettingsController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9EDC195D29AC810700BFE2CD /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC195829AC80E000BFE2CD /* ProgressController.swift */,
+			);
+			path = Progress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,11 +245,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EDC195729AC80AA00BFE2CD /* SettingsController.swift in Sources */,
 				9EDC194629ABBE6100BFE2CD /* UI color + extension.swift in Sources */,
-				9EDC192A29ABB98100BFE2CD /* ViewController.swift in Sources */,
+				9EDC192A29ABB98100BFE2CD /* OverviewController.swift in Sources */,
+				9EDC194E29AC7EC900BFE2CD /* UIView + extension.swift in Sources */,
+				9EDC195929AC80E000BFE2CD /* ProgressController.swift in Sources */,
 				9EDC194229ABBD4300BFE2CD /* TabBarController.swift in Sources */,
+				9EDC194A29AC6D1300BFE2CD /* NavBarController.swift in Sources */,
 				9EDC194829ABBE9B00BFE2CD /* Resources.swift in Sources */,
 				9EDC192629ABB98100BFE2CD /* AppDelegate.swift in Sources */,
+				9EDC194C29AC7C7C00BFE2CD /* BaseController.swift in Sources */,
+				9EDC195F29AC81C600BFE2CD /* SessionController.swift in Sources */,
 				9EDC192829ABB98100BFE2CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,18 +30,18 @@ final class TabBarController: UITabBarController {
         tabBar.barTintColor = R.Colors.inactive
         tabBar.backgroundColor = .white
         tabBar.layer.borderColor = R.Colors.separatorColor.cgColor
-        tabBar.layer.borderWidth = 2
+        tabBar.layer.borderWidth = 1
         tabBar.layer.masksToBounds = true
         
-        let overviewController = UIViewController()
-        let sessionController = UIViewController()
-        let progresscontroller = UIViewController()
-        let settingsController = UIViewController()
+        let overviewController = OverviewController()
+        let sessionController = SessionController()
+        let progresscontroller = ProgressController()
+        let settingsController = SettingsController()
         
-        let overviewNavigationController = UINavigationController(rootViewController: overviewController)
-        let sessionNavigationController = UINavigationController(rootViewController: sessionController)
-        let progressNavigationController = UINavigationController(rootViewController: progresscontroller)
-        let settingsNavigationController = UINavigationController(rootViewController: settingsController)
+        let overviewNavigationController = NavBarController(rootViewController: overviewController)
+        let sessionNavigationController = NavBarController(rootViewController: sessionController)
+        let progressNavigationController = NavBarController(rootViewController: progresscontroller)
+        let settingsNavigationController = NavBarController(rootViewController: settingsController)
         
         overviewNavigationController.tabBarItem = UITabBarItem(title: R.Strings.TabBar.TabsLabels.overview, image: R.Pictures.TabBar.Icons.overview, tag: Tabs.overview.rawValue)
         sessionNavigationController.tabBarItem = UITabBarItem(title: R.Strings.TabBar.TabsLabels.session, image: R.Pictures.TabBar.Icons.session, tag: Tabs.session.rawValue)

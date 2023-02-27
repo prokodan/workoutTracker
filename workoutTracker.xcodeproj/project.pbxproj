@@ -10,10 +10,11 @@
 		9EDC192629ABB98100BFE2CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192529ABB98100BFE2CD /* AppDelegate.swift */; };
 		9EDC192829ABB98100BFE2CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192729ABB98100BFE2CD /* SceneDelegate.swift */; };
 		9EDC192A29ABB98100BFE2CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192929ABB98100BFE2CD /* ViewController.swift */; };
-		9EDC192D29ABB98100BFE2CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC192B29ABB98100BFE2CD /* Main.storyboard */; };
-		9EDC193029ABB98100BFE2CD /* workoutTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192E29ABB98100BFE2CD /* workoutTracker.xcdatamodeld */; };
 		9EDC193229ABB98200BFE2CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC193129ABB98200BFE2CD /* Assets.xcassets */; };
 		9EDC193529ABB98200BFE2CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EDC193329ABB98200BFE2CD /* LaunchScreen.storyboard */; };
+		9EDC194229ABBD4300BFE2CD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194129ABBD4300BFE2CD /* TabBarController.swift */; };
+		9EDC194629ABBE6100BFE2CD /* UI color + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194529ABBE6100BFE2CD /* UI color + extension.swift */; };
+		9EDC194829ABBE9B00BFE2CD /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194729ABBE9B00BFE2CD /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +22,14 @@
 		9EDC192529ABB98100BFE2CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EDC192729ABB98100BFE2CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9EDC192929ABB98100BFE2CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9EDC192C29ABB98100BFE2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9EDC192F29ABB98100BFE2CD /* workoutTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = workoutTracker.xcdatamodel; sourceTree = "<group>"; };
 		9EDC193129ABB98200BFE2CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EDC193429ABB98200BFE2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EDC193629ABB98200BFE2CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EDC193C29ABB99000BFE2CD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9EDC193D29ABB9D800BFE2CD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9EDC194129ABBD4300BFE2CD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9EDC194529ABBE6100BFE2CD /* UI color + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI color + extension.swift"; sourceTree = "<group>"; };
+		9EDC194729ABBE9B00BFE2CD /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,8 @@
 		9EDC191929ABB98100BFE2CD = {
 			isa = PBXGroup;
 			children = (
+				9EDC193D29ABB9D800BFE2CD /* .gitignore */,
+				9EDC193C29ABB99000BFE2CD /* README.md */,
 				9EDC192429ABB98100BFE2CD /* workoutTracker */,
 				9EDC192329ABB98100BFE2CD /* Products */,
 			);
@@ -58,16 +64,57 @@
 		9EDC192429ABB98100BFE2CD /* workoutTracker */ = {
 			isa = PBXGroup;
 			children = (
+				9EDC194329ABBDE600BFE2CD /* Helpers */,
+				9EDC193E29ABBB8200BFE2CD /* Application */,
+				9EDC194029ABBBBC00BFE2CD /* Controller */,
+				9EDC193F29ABBBB000BFE2CD /* Supporting */,
+			);
+			path = workoutTracker;
+			sourceTree = "<group>";
+		};
+		9EDC193E29ABBB8200BFE2CD /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				9EDC192529ABB98100BFE2CD /* AppDelegate.swift */,
 				9EDC192729ABB98100BFE2CD /* SceneDelegate.swift */,
-				9EDC192929ABB98100BFE2CD /* ViewController.swift */,
-				9EDC192B29ABB98100BFE2CD /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9EDC193F29ABBBB000BFE2CD /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
 				9EDC193129ABB98200BFE2CD /* Assets.xcassets */,
 				9EDC193329ABB98200BFE2CD /* LaunchScreen.storyboard */,
 				9EDC193629ABB98200BFE2CD /* Info.plist */,
-				9EDC192E29ABB98100BFE2CD /* workoutTracker.xcdatamodeld */,
 			);
-			path = workoutTracker;
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		9EDC194029ABBBBC00BFE2CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC192929ABB98100BFE2CD /* ViewController.swift */,
+				9EDC194129ABBD4300BFE2CD /* TabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9EDC194329ABBDE600BFE2CD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC194429ABBDED00BFE2CD /* Extensions */,
+				9EDC194729ABBE9B00BFE2CD /* Resources.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9EDC194429ABBDED00BFE2CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC194529ABBE6100BFE2CD /* UI color + extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +177,6 @@
 			files = (
 				9EDC193529ABB98200BFE2CD /* LaunchScreen.storyboard in Resources */,
 				9EDC193229ABB98200BFE2CD /* Assets.xcassets in Resources */,
-				9EDC192D29ABB98100BFE2CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EDC194629ABBE6100BFE2CD /* UI color + extension.swift in Sources */,
 				9EDC192A29ABB98100BFE2CD /* ViewController.swift in Sources */,
+				9EDC194229ABBD4300BFE2CD /* TabBarController.swift in Sources */,
+				9EDC194829ABBE9B00BFE2CD /* Resources.swift in Sources */,
 				9EDC192629ABB98100BFE2CD /* AppDelegate.swift in Sources */,
-				9EDC193029ABB98100BFE2CD /* workoutTracker.xcdatamodeld in Sources */,
 				9EDC192829ABB98100BFE2CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +199,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9EDC192B29ABB98100BFE2CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9EDC192C29ABB98100BFE2CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9EDC193329ABB98200BFE2CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,12 +333,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52V9YXPJQB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = workoutTracker/Info.plist;
+				INFOPLIST_FILE = workoutTracker/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +345,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prokodan.workoutTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,12 +363,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52V9YXPJQB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = workoutTracker/Info.plist;
+				INFOPLIST_FILE = workoutTracker/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +375,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = prokodan.workoutTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -362,19 +406,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9EDC192E29ABB98100BFE2CD /* workoutTracker.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9EDC192F29ABB98100BFE2CD /* workoutTracker.xcdatamodel */,
-			);
-			currentVersion = 9EDC192F29ABB98100BFE2CD /* workoutTracker.xcdatamodel */;
-			path = workoutTracker.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9EDC191A29ABB98100BFE2CD /* Project object */;
 }

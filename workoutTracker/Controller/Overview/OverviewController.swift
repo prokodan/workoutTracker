@@ -9,12 +9,12 @@ import UIKit
 
 class OverviewController: BaseController {
 
-    private let allWorkoutsButton = SecondaryButton()
+    private let navBar = OverviewNavBar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = R.Strings.NavBar.Titles.overview
-        navigationController?.tabBarItem.title = R.Strings.TabBar.TabsLabels.overview
+        navigationController?.tabBarItem.title = R.Strings.TabBar.tabsLabels(for: .overview)
         addViews()
         layoutViews()
         configure()
@@ -27,33 +27,25 @@ class OverviewController: BaseController {
 extension OverviewController {
     override func addViews() {
         super.addViews()
-        
-        view.addView(allWorkoutsButton)
+        [navBar].forEach {view.addView($0)}
+
     }
     
     override func layoutViews() {
         super.layoutViews()
         
         NSLayoutConstraint.activate([
-            allWorkoutsButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            allWorkoutsButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
-            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130)
+            navBar.topAnchor.constraint(equalTo: view.topAnchor),
+            navBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            navBar.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
         
     }
     
     override func configure() {
         super.configure()
-        
-        allWorkoutsButton.setTitle(Resources.Strings.Controllers.Overview.Buttons.allWorkout)
-        allWorkoutsButton.addTarget(self, action: #selector(allWorkoutsButtonAction), for: .touchUpInside)
+        navigationController?.navigationBar.isHidden = true
+
     }
 }
 
-@objc
-extension OverviewController {
-    func allWorkoutsButtonAction() {
-        print("AllWorkoutsButton Tapped")
-    }
-}

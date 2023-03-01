@@ -7,21 +7,15 @@
 
 import UIKit
 
-class SessionController: BaseController {
+class SessionController: WABaseController {
     
-    private let timerView: TimerView = {
-        let view = TimerView()
-        
-        return view
-    }()
+    private let timerView = TimerView()
+    
+    private let timerDuration = 3.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = R.Strings.NavBar.Titles.session
-        navigationController?.tabBarItem.title = R.Strings.TabBar.tabsLabels(for: .session)
         
-        addNavBarButton(at: .left, with: R.Strings.Controllers.Session.navBarLeftButton)
-        addNavBarButton(at: .right, with: R.Strings.Controllers.Session.navBarRightButton)
         
         setupViews()
         constraintViews()
@@ -29,11 +23,19 @@ class SessionController: BaseController {
     }
     
     override func navBarLeftButtonAction() {
-//        print("Session left button tapped")
+        if timerView.timerState == .isStopped {
+            timerView.startTimer()
+        } else {
+            timerView.pauseTimer()
+        }
+        timerView.timerState = timerView.timerState == .isRunning ? .isStopped : .isRunning
+        addNavBarButton(at: .left, with: timerView.timerState == .isRunning ? R.Strings.Controllers.Session.navBarPause : R.Strings.Controllers.Session.navBarStart)
     }
     
     override func navBarRightButtonAction() {
-//        print("Session right button tapped")
+        timerView.stopTimer()
+        timerView.timerState = .isStopped
+        addNavBarButton(at: .left, with: R.Strings.Controllers.Session.navBarStart)
     }
     
 }
@@ -60,5 +62,12 @@ extension SessionController {
     override func configureAppearance() {
         super.configureAppearance()
         
+        title = R.Strings.NavBar.Titles.session
+        navigationController?.tabBarItem.title = R.Strings.TabBar.tabsLabels(for: .session)
+        
+        addNavBarButton(at: .left, with: R.Strings.Controllers.Session.navBarStart)
+        addNavBarButton(at: .right, with: R.Strings.Controllers.Session.navBarFinish)
+        
+        timerView.configure(with: timerDuration, and: 0)
     }
 }

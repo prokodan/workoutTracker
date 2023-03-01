@@ -16,14 +16,14 @@
 		9EDC194629ABBE6100BFE2CD /* UI color + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194529ABBE6100BFE2CD /* UI color + extension.swift */; };
 		9EDC194829ABBE9B00BFE2CD /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194729ABBE9B00BFE2CD /* Resources.swift */; };
 		9EDC194A29AC6D1300BFE2CD /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194929AC6D1300BFE2CD /* NavBarController.swift */; };
-		9EDC194C29AC7C7C00BFE2CD /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194B29AC7C7C00BFE2CD /* BaseController.swift */; };
+		9EDC194C29AC7C7C00BFE2CD /* WABaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194B29AC7C7C00BFE2CD /* WABaseController.swift */; };
 		9EDC194E29AC7EC900BFE2CD /* UIView + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC194D29AC7EC900BFE2CD /* UIView + extension.swift */; };
 		9EDC195729AC80AA00BFE2CD /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC195629AC80AA00BFE2CD /* SettingsController.swift */; };
 		9EDC195929AC80E000BFE2CD /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC195829AC80E000BFE2CD /* ProgressController.swift */; };
 		9EDC195F29AC81C600BFE2CD /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC195E29AC81C600BFE2CD /* SessionController.swift */; };
 		9EDC196229AC94E600BFE2CD /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC196129AC94E600BFE2CD /* WAButton.swift */; };
 		9EDC196429ACA3FF00BFE2CD /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC196329ACA3FF00BFE2CD /* OverviewNavBar.swift */; };
-		9EDC196629ACA42100BFE2CD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC196529ACA42100BFE2CD /* BaseView.swift */; };
+		9EDC196629ACA42100BFE2CD /* WABaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC196529ACA42100BFE2CD /* WABaseView.swift */; };
 		9EDC196929ACBA8C00BFE2CD /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC196829ACBA8C00BFE2CD /* WeekView.swift */; };
 		9EDC196B29ACBCF100BFE2CD /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC196A29ACBCF100BFE2CD /* WeekdayView.swift */; };
 		9EDC196D29ACC45100BFE2CD /* Date + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC196C29ACC45100BFE2CD /* Date + extension.swift */; };
@@ -46,14 +46,14 @@
 		9EDC194529ABBE6100BFE2CD /* UI color + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI color + extension.swift"; sourceTree = "<group>"; };
 		9EDC194729ABBE9B00BFE2CD /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		9EDC194929AC6D1300BFE2CD /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
-		9EDC194B29AC7C7C00BFE2CD /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		9EDC194B29AC7C7C00BFE2CD /* WABaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseController.swift; sourceTree = "<group>"; };
 		9EDC194D29AC7EC900BFE2CD /* UIView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + extension.swift"; sourceTree = "<group>"; };
 		9EDC195629AC80AA00BFE2CD /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		9EDC195829AC80E000BFE2CD /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		9EDC195E29AC81C600BFE2CD /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		9EDC196129AC94E600BFE2CD /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		9EDC196329ACA3FF00BFE2CD /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
-		9EDC196529ACA42100BFE2CD /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		9EDC196529ACA42100BFE2CD /* WABaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseView.swift; sourceTree = "<group>"; };
 		9EDC196829ACBA8C00BFE2CD /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		9EDC196A29ACBCF100BFE2CD /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		9EDC196C29ACC45100BFE2CD /* Date + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + extension.swift"; sourceTree = "<group>"; };
@@ -155,9 +155,8 @@
 		9EDC194F29AC803700BFE2CD /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				9EDC194129ABBD4300BFE2CD /* TabBarController.swift */,
-				9EDC194929AC6D1300BFE2CD /* NavBarController.swift */,
-				9EDC194B29AC7C7C00BFE2CD /* BaseController.swift */,
+				9EDC197929AF8E5F00BFE2CD /* Navigation */,
+				9EDC194B29AC7C7C00BFE2CD /* WABaseController.swift */,
 				9EDC196129AC94E600BFE2CD /* WAButton.swift */,
 				9EDC196F29ACD27F00BFE2CD /* Views */,
 			);
@@ -219,7 +218,7 @@
 		9EDC196F29ACD27F00BFE2CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9EDC196529ACA42100BFE2CD /* BaseView.swift */,
+				9EDC196529ACA42100BFE2CD /* WABaseView.swift */,
 				9EDC197029ACD28C00BFE2CD /* WABaseInfoView.swift */,
 			);
 			path = Views;
@@ -248,6 +247,15 @@
 				9EDC197729AF606300BFE2CD /* ProgressView.swift */,
 			);
 			path = TImer;
+			sourceTree = "<group>";
+		};
+		9EDC197929AF8E5F00BFE2CD /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				9EDC194129ABBD4300BFE2CD /* TabBarController.swift */,
+				9EDC194929AC6D1300BFE2CD /* NavBarController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,8 +344,8 @@
 				9EDC194829ABBE9B00BFE2CD /* Resources.swift in Sources */,
 				9EDC196D29ACC45100BFE2CD /* Date + extension.swift in Sources */,
 				9EDC192629ABB98100BFE2CD /* AppDelegate.swift in Sources */,
-				9EDC194C29AC7C7C00BFE2CD /* BaseController.swift in Sources */,
-				9EDC196629ACA42100BFE2CD /* BaseView.swift in Sources */,
+				9EDC194C29AC7C7C00BFE2CD /* WABaseController.swift in Sources */,
+				9EDC196629ACA42100BFE2CD /* WABaseView.swift in Sources */,
 				9EDC196B29ACBCF100BFE2CD /* WeekdayView.swift in Sources */,
 				9EDC195F29AC81C600BFE2CD /* SessionController.swift in Sources */,
 				9EDC192829ABB98100BFE2CD /* SceneDelegate.swift in Sources */,

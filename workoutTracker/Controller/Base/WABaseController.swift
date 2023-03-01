@@ -1,5 +1,5 @@
 //
-//  BaseController.swift
+//  WABaseController.swift
 //  workoutTracker
 //
 //  Created by Данил Прокопенко on 27.02.2023.
@@ -11,7 +11,7 @@ enum NavBarPosition {
     case left, right
 }
 
-class BaseController: UIViewController {
+class WABaseController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class BaseController: UIViewController {
 
 
 @objc
-extension BaseController {
+extension WABaseController {
     
     func setupViews() {
         
@@ -44,7 +44,7 @@ extension BaseController {
     }
 }
 
-extension BaseController {
+extension WABaseController {
     func addNavBarButton(at position: NavBarPosition, with title: String) {
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)

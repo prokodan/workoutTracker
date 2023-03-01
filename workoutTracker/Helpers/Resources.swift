@@ -70,8 +70,9 @@ struct Resources {
                                    
                 }
                 enum Session {
-                    static let navBarLeftButton = "Pause"
-                    static let navBarRightButton = "Finish"
+                    static let navBarStart = "Start"
+                    static let navBarPause = "Pause"
+                    static let navBarFinish = "Finish"
                     enum Buttons {
                         
                     }

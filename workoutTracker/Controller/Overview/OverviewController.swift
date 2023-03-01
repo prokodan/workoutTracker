@@ -15,24 +15,21 @@ class OverviewController: BaseController {
         super.viewDidLoad()
         title = R.Strings.NavBar.Titles.overview
         navigationController?.tabBarItem.title = R.Strings.TabBar.tabsLabels(for: .overview)
-        addViews()
-        layoutViews()
-        configure()
+        setupViews()
+        constraintViews()
+        configureAppearance()
     }
-
-
-    
 }
 
 extension OverviewController {
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         [navBar].forEach {view.addView($0)}
 
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
         
         NSLayoutConstraint.activate([
             navBar.topAnchor.constraint(equalTo: view.topAnchor),
@@ -42,8 +39,8 @@ extension OverviewController {
         
     }
     
-    override func configure() {
-        super.configure()
+    override func configureAppearance() {
+        super.configureAppearance()
         navigationController?.navigationBar.isHidden = true
 
     }

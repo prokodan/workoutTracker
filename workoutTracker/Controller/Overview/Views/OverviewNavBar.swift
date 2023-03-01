@@ -38,12 +38,12 @@ final class OverviewNavBar: BaseView {
 
 extension OverviewNavBar {
     
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         [titleLabel, allWorkoutsButton, addButton, weekView].forEach {addView($0)}
     }
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
         
         NSLayoutConstraint.activate([
             
@@ -70,8 +70,8 @@ extension OverviewNavBar {
         
     }
     
-    override func configureView() {
-        super.configureView()
+    override func configureAppearance() {
+        super.configureAppearance()
         backgroundColor = .white
         
         titleLabel.text = "Today"

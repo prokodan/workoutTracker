@@ -18,14 +18,19 @@ final class TabBarController: UITabBarController {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        configure()
+        configureAppearance()
+        switchTo(tab: .session)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func configure() {
+    func switchTo(tab: Tabs) {
+        selectedIndex = tab.rawValue
+    }
+    
+    private func configureAppearance() {
         tabBar.tintColor = R.Colors.active
         tabBar.barTintColor = R.Colors.inactive
         tabBar.backgroundColor = .white

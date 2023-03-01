@@ -60,21 +60,28 @@ struct Resources {
                     static let progress = "Workout Progress"
                     static let settings = "Settings"
                 }
+                enum Buttons {
+                    static let allWorkout = "All Workouts"
+                }
             }
             
             enum Controllers {
                 enum Overview {
-                    enum Buttons {
-                        static let allWorkout = "All Workouts"
-                    }
+                                   
                 }
                 enum Session {
                     static let navBarLeftButton = "Pause"
                     static let navBarRightButton = "Finish"
+                    enum Buttons {
+                        
+                    }
                 }
                 enum Progress {
                     static let navBarLeftButton = "Export"
                     static let navBarRightButton = "Details"
+                    enum Buttons {
+                        static let WABaseInfoViewButton = "Last 7 days".uppercased()
+                    }
                 }
                 enum Settings {
                     static let navBarRightButton = "Log Out"

@@ -9,7 +9,11 @@ import UIKit
 
 final class OverviewNavBar: BaseView {
     
-    private let allWorkoutsButton = SecondaryButton()
+    private let allWorkoutsButton: WAButton = {
+        let button = WAButton(with: .secondary)
+        button.setTitle(R.Strings.NavBar.Buttons.allWorkout)
+        return button
+    }()
     private let addButton = UIButton()
     private let titleLabel = UILabel()
     private let weekView = WeekView()
@@ -55,7 +59,6 @@ extension OverviewNavBar {
             allWorkoutsButton.topAnchor.constraint(equalTo: addButton.topAnchor),
             allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -15),
             allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
-            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
             
             titleLabel.centerYAnchor.constraint(equalTo: allWorkoutsButton.centerYAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),
@@ -77,8 +80,6 @@ extension OverviewNavBar {
         titleLabel.text = "Today"
         titleLabel.textColor = R.Colors.navGrayTitle
         titleLabel.font = Resources.Fonts.helveticaRegular(with: 22)
-        
-        allWorkoutsButton.setTitle(Resources.Strings.Controllers.Overview.Buttons.allWorkout)
         
         addButton.setImage( R.Pictures.NavBar.Common.add, for: .normal)
         

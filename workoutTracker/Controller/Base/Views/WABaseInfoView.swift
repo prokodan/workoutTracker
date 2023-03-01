@@ -1,5 +1,5 @@
 //
-//  BaseInfoView.swift
+//  WABaseInfoView.swift
 //  workoutTracker
 //
 //  Created by Данил Прокопенко on 27.02.2023.
@@ -7,13 +7,15 @@
 
 import UIKit
 
-class BaseInfoView: BaseView {
+class WABaseInfoView: BaseView {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = R.Fonts.helveticaRegular(with: 13)
         label.textColor = R.Colors.inactive
         return label
     }()
+    
+    private let button = WAButton(with: .primary)
     
     private let contentView: UIView = {
         let view = UIView()
@@ -24,24 +26,31 @@ class BaseInfoView: BaseView {
         return view
     }()
     
-    init(with title: String? = nil, alignment: NSTextAlignment = .left) {
+    init(with title: String? = nil, buttonTitle: String? = nil) {
         titleLabel.text = title?.uppercased()
-        titleLabel.textAlignment = alignment
+        titleLabel.textAlignment = buttonTitle == nil ? .center : .left
+        button.setTitle(buttonTitle)
+        button.isHidden = buttonTitle == nil ? true : false
         super.init(frame: .zero)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func addButtonTarget(target: Any?, action: Selector) {
+        button.addTarget(target, action: action, for: .touchUpInside)
+    }
 }
 
 @objc
-extension BaseInfoView {
+extension WABaseInfoView {
     
     override func setupViews() {
         super.setupViews()
         
         addView(titleLabel)
+        addView(button)
         addView(contentView)
     }
     
@@ -53,6 +62,10 @@ extension BaseInfoView {
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
             titleLabel.topAnchor.constraint(equalTo: topAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
+            
+            button.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
+            button.trailingAnchor.constraint(equalTo: trailingAnchor),
+            button.heightAnchor.constraint(equalToConstant: 28),
             
             
             contentView.topAnchor.constraint(equalTo: contentTopAnchor, constant: contentTopOffset),

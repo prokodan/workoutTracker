@@ -78,8 +78,8 @@ extension OverviewNavBar {
         backgroundColor = .white
         
         titleLabel.text = "Today"
-        titleLabel.textColor = R.Colors.navGrayTitle
-        titleLabel.font = Resources.Fonts.helveticaRegular(with: 22)
+        titleLabel.textColor = R.Colors.navGreyTitle
+        titleLabel.font = Resources.Fonts.helveticaBold(with: 22)
         
         addButton.setImage( R.Pictures.NavBar.Common.add, for: .normal)
         

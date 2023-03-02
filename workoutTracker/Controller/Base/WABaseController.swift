@@ -50,7 +50,7 @@ extension WABaseController {
         button.setTitle(title, for: .normal)
         button.setTitleColor(R.Colors.active, for: .normal)
         button.setTitleColor(R.Colors.inactive, for: .disabled)
-        button.titleLabel?.font = R.Fonts.helveticaRegular(with: 17)
+        button.titleLabel?.font = R.Fonts.helveticaLight(with: 17)
         
         switch position {
         case .left:

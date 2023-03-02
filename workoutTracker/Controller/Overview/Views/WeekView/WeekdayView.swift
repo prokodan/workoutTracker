@@ -54,9 +54,9 @@ extension WeekView {
             layer.cornerRadius = 5
             layer.masksToBounds = true
             
-            nameLabel.font = R.Fonts.helveticaRegular(with: 9)
+            nameLabel.font = R.Fonts.helveticaBold(with: 9)
             nameLabel.textAlignment = .center
-            dateLabel.font = R.Fonts.helveticaRegular(with: 15)
+            dateLabel.font = R.Fonts.helveticaLight(with: 15)
             dateLabel.textAlignment = .center
             
             

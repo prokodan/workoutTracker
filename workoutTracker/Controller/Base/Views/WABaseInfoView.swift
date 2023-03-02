@@ -10,7 +10,7 @@ import UIKit
 class WABaseInfoView: WABaseView {
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = R.Fonts.helveticaRegular(with: 13)
+        label.font = R.Fonts.helveticaLight(with: 13)
         label.textColor = R.Colors.inactive
         return label
     }()

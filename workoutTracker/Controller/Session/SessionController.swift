@@ -11,7 +11,7 @@ class SessionController: WABaseController {
     
     private let timerView = TimerView()
     
-    private let timerDuration = 3.0
+    private let timerDuration = 5.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,13 +29,13 @@ class SessionController: WABaseController {
             timerView.pauseTimer()
         }
         timerView.timerState = timerView.timerState == .isRunning ? .isStopped : .isRunning
-        addNavBarButton(at: .left, with: timerView.timerState == .isRunning ? R.Strings.Controllers.Session.navBarPause : R.Strings.Controllers.Session.navBarStart)
+        addNavBarButton(at: .left, with: timerView.timerState == .isRunning ? R.Strings.NavBar.Buttons.navBarPause : R.Strings.NavBar.Buttons.navBarStart)
     }
     
     override func navBarRightButtonAction() {
         timerView.stopTimer()
         timerView.timerState = .isStopped
-        addNavBarButton(at: .left, with: R.Strings.Controllers.Session.navBarStart)
+        addNavBarButton(at: .left, with: R.Strings.NavBar.Buttons.navBarStart)
     }
     
 }
@@ -54,7 +54,6 @@ extension SessionController {
             timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
             timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
-            timerView.heightAnchor.constraint(equalToConstant: 300)
         ])
         
     }
@@ -65,9 +64,14 @@ extension SessionController {
         title = R.Strings.NavBar.Titles.session
         navigationController?.tabBarItem.title = R.Strings.TabBar.tabsLabels(for: .session)
         
-        addNavBarButton(at: .left, with: R.Strings.Controllers.Session.navBarStart)
-        addNavBarButton(at: .right, with: R.Strings.Controllers.Session.navBarFinish)
+        addNavBarButton(at: .left, with: R.Strings.NavBar.Buttons.navBarStart)
+        addNavBarButton(at: .right, with: R.Strings.NavBar.Buttons.navBarFinish)
         
         timerView.configure(with: timerDuration, and: 0)
+        timerView.callBack = { [weak self ] in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self?.navBarRightButtonAction()
+            }
+        }
     }
 }

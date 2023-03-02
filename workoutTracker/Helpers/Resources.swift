@@ -16,7 +16,8 @@ struct Resources {
         static let inactive = UIColor(hexString: "#929DA5")
         
         static let separatorColor = UIColor(hexString: "#E8ECEF")
-        static let navGrayTitle = UIColor(hexString: "#545C77")
+        static let navGreyTitle = UIColor(hexString: "#545C77")
+        static let subtitleGrey = UIColor(hexString: "#9BA4B0")
         static let secondary = UIColor(hexString: "#F0F3FF")
         
         static let background = UIColor(hexString: "#F8F9F9")
@@ -62,6 +63,9 @@ struct Resources {
                 }
                 enum Buttons {
                     static let allWorkout = "All Workouts"
+                    static let navBarStart = "Start"
+                    static let navBarPause = "Pause"
+                    static let navBarFinish = "Finish"
                 }
             }
             
@@ -70,9 +74,10 @@ struct Resources {
                                    
                 }
                 enum Session {
-                    static let navBarStart = "Start"
-                    static let navBarPause = "Pause"
-                    static let navBarFinish = "Finish"
+                    static let elapsedTime = "Elapsed time"
+                    static let remainingTime = "Remaining time"
+                    static let completedPercent = "Completed"
+                    static let remainingPercent = "Remaining"
                     enum Buttons {
                         
                     }
@@ -91,8 +96,14 @@ struct Resources {
         }
         
         enum Fonts {
+            static func helveticaBold(with size: CGFloat) -> UIFont {
+                UIFont(name: "Helvetica-Bold", size: size) ?? UIFont()
+            }
             static func helveticaRegular(with size: CGFloat) -> UIFont {
                 UIFont(name: "Helvetica", size: size) ?? UIFont()
+            }
+            static func helveticaLight(with size: CGFloat) -> UIFont {
+                UIFont(name: "Helvetica-Light", size: size) ?? UIFont()
             }
             
         }

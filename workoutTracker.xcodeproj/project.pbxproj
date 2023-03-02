@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E0F3FD529B08E89000C8EEA /* TimerPercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F3FD429B08E89000C8EEA /* TimerPercentView.swift */; };
 		9EDC192629ABB98100BFE2CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192529ABB98100BFE2CD /* AppDelegate.swift */; };
 		9EDC192829ABB98100BFE2CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192729ABB98100BFE2CD /* SceneDelegate.swift */; };
 		9EDC192A29ABB98100BFE2CD /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192929ABB98100BFE2CD /* OverviewController.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E0F3FD429B08E89000C8EEA /* TimerPercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPercentView.swift; sourceTree = "<group>"; };
 		9EDC192229ABB98100BFE2CD /* workoutTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workoutTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDC192529ABB98100BFE2CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EDC192729ABB98100BFE2CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			children = (
 				9EDC197429AF5FD700BFE2CD /* TimerView.swift */,
 				9EDC197729AF606300BFE2CD /* ProgressView.swift */,
+				9E0F3FD429B08E89000C8EEA /* TimerPercentView.swift */,
 			);
 			path = TImer;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				9EDC194829ABBE9B00BFE2CD /* Resources.swift in Sources */,
 				9EDC196D29ACC45100BFE2CD /* Date + extension.swift in Sources */,
 				9EDC192629ABB98100BFE2CD /* AppDelegate.swift in Sources */,
+				9E0F3FD529B08E89000C8EEA /* TimerPercentView.swift in Sources */,
 				9EDC194C29AC7C7C00BFE2CD /* WABaseController.swift in Sources */,
 				9EDC196629ACA42100BFE2CD /* WABaseView.swift in Sources */,
 				9EDC196B29ACBCF100BFE2CD /* WeekdayView.swift in Sources */,

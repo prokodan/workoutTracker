@@ -87,7 +87,7 @@ private extension WAButton {
             
         case .primary:
             label.textColor = R.Colors.inactive
-            label.font = R.Fonts.helveticaRegular(with: 13)
+            label.font = R.Fonts.helveticaLight(with: 13)
             iconView.tintColor = R.Colors.inactive
         case .secondary:
             backgroundColor = R.Colors.secondary

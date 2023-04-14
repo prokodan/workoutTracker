@@ -15,6 +15,9 @@ class WABaseController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupViews()
+        constraintViews()
         configureAppearance()
     }
 }

@@ -17,7 +17,7 @@ class WABaseInfoView: WABaseView {
     
     private let button = WAButton(with: .primary)
     
-    private let contentView: UIView = {
+    let contentView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.borderColor = R.Colors.separatorColor.cgColor
@@ -29,13 +29,13 @@ class WABaseInfoView: WABaseView {
     init(with title: String? = nil, buttonTitle: String? = nil) {
         titleLabel.text = title?.uppercased()
         titleLabel.textAlignment = buttonTitle == nil ? .center : .left
-        button.setTitle(buttonTitle)
+        button.setTitle(buttonTitle?.uppercased())
         button.isHidden = buttonTitle == nil ? true : false
         super.init(frame: .zero)
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(frame: .zero)
     }
     
     func addButtonTarget(target: Any?, action: Selector) {
@@ -48,10 +48,11 @@ extension WABaseInfoView {
     
     override func setupViews() {
         super.setupViews()
-        
-        addView(titleLabel)
-        addView(button)
-        addView(contentView)
+        [
+            titleLabel,
+            button,
+            contentView
+        ].forEach { addView($0)}
     }
     
     override func constraintViews() {

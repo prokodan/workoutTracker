@@ -41,6 +41,23 @@ struct Resources {
                 static let add = UIImage(named: "Add")
             }
         }
+        enum Controller {
+            enum Overview {
+                
+            }
+            enum Session {
+                static let heartRate = UIImage(named: "Heart Beat Icon")
+                static let averagePace = UIImage(named: "Speed Icon")
+                static let totalSteps = UIImage(named: "Steps Icon")
+                static let totalDistance = UIImage(named: "Maps Icon")
+            }
+            enum Progress {
+                
+            }
+            enum Settings {
+                
+            }
+        }
     }
     
     enum Strings {
@@ -78,6 +95,17 @@ struct Resources {
                     static let remainingTime = "Remaining time"
                     static let completedPercent = "Completed"
                     static let remainingPercent = "Remaining"
+                    
+                    static let workoutStats = "Workout stats"
+                    static let heartRate = "Heart rate"
+                    static let averagePace = "Average pace"
+                    static let totalSteps = "Total steps"
+                    static let totalDistance = "Total distance"
+                    
+                    static let stepsCounter = "Steps Counter"
+                    
+                    
+                    
                     enum Buttons {
                         
                     }
@@ -85,8 +113,12 @@ struct Resources {
                 enum Progress {
                     static let navBarLeftButton = "Export"
                     static let navBarRightButton = "Details"
+                    static let dailyPerformance = "Daily Performance".uppercased()
+                    static let monthlyPerformance = "Monthly Performance".uppercased()
+
                     enum Buttons {
-                        static let WABaseInfoViewButton = "Last 7 days".uppercased()
+                        static let dailyPerformanceButton = "Last 7 days".uppercased()
+                        static let monthlyPerformanceButton = "Last 10 months".uppercased()
                     }
                 }
                 enum Settings {

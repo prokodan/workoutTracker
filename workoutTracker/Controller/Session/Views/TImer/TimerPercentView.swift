@@ -42,7 +42,10 @@ extension TimerView {
         override func setupViews() {
             super.setupViews()
             addView(stackView)
-            [percentLabel, subtitleLabel].forEach { stackView.addArrangedSubview($0)}
+            [
+                percentLabel,
+                subtitleLabel
+            ].forEach { stackView.addArrangedSubview($0)}
         }
         
         override func constraintViews() {

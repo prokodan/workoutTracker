@@ -26,10 +26,10 @@ extension MonthlyPerformanceView {
     override func constraintViews() {
         super.constraintViews()
         NSLayoutConstraint.activate([
-            chartsView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            chartsView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15),
             chartsView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
             chartsView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
-            chartsView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
+            chartsView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
         ])
     }
     

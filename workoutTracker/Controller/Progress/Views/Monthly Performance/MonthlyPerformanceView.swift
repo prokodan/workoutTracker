@@ -11,9 +11,9 @@ final class MonthlyPerformanceView: WABaseInfoView {
     
     private let chartsView = WAChartsView()
   
-    func configure(with items: [WAChartsView.Data]) {
+    func configure(with items: [WAChartsView.Data], topChartOffset: Int) {
 
-        chartsView.configure(with: items)
+        chartsView.configure(with: items, topChartOffset: topChartOffset)
     }
 }
 

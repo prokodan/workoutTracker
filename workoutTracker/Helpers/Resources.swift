@@ -43,7 +43,9 @@ struct Resources {
         }
         enum Controller {
             enum Overview {
-                
+                static let rightArrow = UIImage(named: "Right Arrow")
+                static let checkmarkEmpty = UIImage(named: "Checkmark Empty")
+                static let checkmarkFilled = UIImage(named: "Checkmark Filled")
             }
             enum Session {
                 static let heartRate = UIImage(named: "Heart Beat Icon")

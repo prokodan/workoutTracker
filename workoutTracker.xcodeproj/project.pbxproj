@@ -14,6 +14,8 @@
 		9E8EA76F29E93DD700E9E96A /* YAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8EA76E29E93DD700E9E96A /* YAxisView.swift */; };
 		9E8EA77129E9408400E9E96A /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8EA77029E9408400E9E96A /* XAxisView.swift */; };
 		9E8EA77329E95A5D00E9E96A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8EA77229E95A5D00E9E96A /* ChartView.swift */; };
+		9E8EA77729E9793E00E9E96A /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8EA77629E9793E00E9E96A /* SectionHeaderView.swift */; };
+		9E8EA77929E97EBB00E9E96A /* TrainingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8EA77829E97EBB00E9E96A /* TrainingCellView.swift */; };
 		9EDC192629ABB98100BFE2CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192529ABB98100BFE2CD /* AppDelegate.swift */; };
 		9EDC192829ABB98100BFE2CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192729ABB98100BFE2CD /* SceneDelegate.swift */; };
 		9EDC192A29ABB98100BFE2CD /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC192929ABB98100BFE2CD /* OverviewController.swift */; };
@@ -52,6 +54,8 @@
 		9E8EA76E29E93DD700E9E96A /* YAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAxisView.swift; sourceTree = "<group>"; };
 		9E8EA77029E9408400E9E96A /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
 		9E8EA77229E95A5D00E9E96A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		9E8EA77629E9793E00E9E96A /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		9E8EA77829E97EBB00E9E96A /* TrainingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCellView.swift; sourceTree = "<group>"; };
 		9EDC192229ABB98100BFE2CD /* workoutTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workoutTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDC192529ABB98100BFE2CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EDC192729ABB98100BFE2CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +141,23 @@
 				9E8EA76E29E93DD700E9E96A /* YAxisView.swift */,
 				9E8EA77029E9408400E9E96A /* XAxisView.swift */,
 				9E8EA77229E95A5D00E9E96A /* ChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E8EA77429E9792200E9E96A /* CollectionVIew */ = {
+			isa = PBXGroup;
+			children = (
+				9E8EA77529E9792F00E9E96A /* Views */,
+			);
+			path = CollectionVIew;
+			sourceTree = "<group>";
+		};
+		9E8EA77529E9792F00E9E96A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E8EA77629E9793E00E9E96A /* SectionHeaderView.swift */,
+				9E8EA77829E97EBB00E9E96A /* TrainingCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -269,6 +290,7 @@
 		9EDC196029AC94D100BFE2CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9E8EA77429E9792200E9E96A /* CollectionVIew */,
 				9EDC196729ACBA7A00BFE2CD /* WeekView */,
 				9EDC197229AF436500BFE2CD /* NavBar */,
 			);
@@ -450,6 +472,7 @@
 				9EDC196429ACA3FF00BFE2CD /* OverviewNavBar.swift in Sources */,
 				9EDC192A29ABB98100BFE2CD /* OverviewController.swift in Sources */,
 				9E8EA76929E9385600E9E96A /* MonthlyPerformanceView.swift in Sources */,
+				9E8EA77929E97EBB00E9E96A /* TrainingCellView.swift in Sources */,
 				9EDC194E29AC7EC900BFE2CD /* UIView + extension.swift in Sources */,
 				9EDC195929AC80E000BFE2CD /* ProgressController.swift in Sources */,
 				9EE94FAB29B2194700DA1CD2 /* WABarView.swift in Sources */,
@@ -471,6 +494,7 @@
 				9E0F3FD529B08E89000C8EEA /* TimerPercentView.swift in Sources */,
 				9EDC194C29AC7C7C00BFE2CD /* WABaseController.swift in Sources */,
 				9EDC196629ACA42100BFE2CD /* WABaseView.swift in Sources */,
+				9E8EA77729E9793E00E9E96A /* SectionHeaderView.swift in Sources */,
 				9EDC196B29ACBCF100BFE2CD /* WeekdayView.swift in Sources */,
 				9EE94FA629B2190F00DA1CD2 /* WABarsView.swift in Sources */,
 				9E8EA77329E95A5D00E9E96A /* ChartView.swift in Sources */,
